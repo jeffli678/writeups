@@ -8,7 +8,7 @@ We get a **client.apk** after downloading the challenge. I have no Android phone
 
 After asking for a user name, the app presents a multiple-choice problem with four options (shown below). The problem itself is not difficult. However, there is a ten-second countdown and we must answer it before the time elapses. The challenge description says that we need to correctly answer 1000 such problems. So manual solving is probably not a wise idea. 
 
-![app](imgs/1.png =400x)
+<img src="imgs/1.png" width="400">
 
 ## Inspecting the Traffic
 
@@ -71,7 +71,7 @@ mitmdump -s ./mitm-solve.py
 
 And it works! Now instead of the question text, the app shows the index of the correct answer to us. 
 
-![replace](imgs/2.png =400x)
+<img src="imgs/2.png" width="400">
 
 I tried to solve it by hand. But even if I have the correct answer, I still cannot stop clicking the wrong button. I do not want to solve it as an action game, so I start to seek viable ways to automate the solving. 
 
@@ -116,4 +116,4 @@ def solve_and_inject(flow):
 
 Alright, it now works! Wait for some 20 minutes and we get the flag: rtcp{qu1z_4pps_4re_c00l_aeecfa13}. I actually recorded a [video](https://youtu.be/Acp8PDbsvQk) to demonstrate the solving. 
 
-![digits](imgs/3.png =400x)
+<img src="imgs/3.png" width="400">
