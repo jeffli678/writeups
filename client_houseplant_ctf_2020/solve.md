@@ -114,6 +114,10 @@ def solve_and_inject(flow):
     print('solved: %d' % i)
 ```
 
-Alright, it now works! Wait for some 20 minutes and we get the flag: rtcp{qu1z_4pps_4re_c00l_aeecfa13}. I actually recorded a [video](https://youtu.be/Acp8PDbsvQk) to demonstrate the solving. 
+Alright, it now works! Wait for some 20 minutes and we get the flag: rtcp{qu1z_4pps_4re_c00l_aeecfa13}. 
 
 <img src="imgs/3.png" width="400">
+
+I actually recorded a [video](https://youtu.be/Acp8PDbsvQk) to demonstrate the solving. 
+
+[![Video](imgs/video.png)](https://youtu.be/Acp8PDbsvQk "Video")
