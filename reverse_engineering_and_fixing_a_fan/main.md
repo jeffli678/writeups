@@ -75,14 +75,14 @@ After I get a comprehensive understanding of the fan, I need to repair it. In re
 The above can be summarized in the following chart:
 
 
-Repairing a fan | Reverse Enginnering
---- | --- | ---
-take the fan apart | static analysis
-spot the cylinder | find a pivot
-guess the cylinder can connect the circuit | have a hypothesis
-put the cylinder back and turn the fan on | test the hypothesis (debugging)
-reason about the plastic box's functionality | symbolic execution & constraint solving
-understand it is fall protection mechanism | understand the functionality of code
-repair the fan | reimplement as code or documentation
+|Repairing a fan | Reverse Enginnering|
+|--- | --- | --- |
+|take the fan apart | static analysis|
+|spot the cylinder | find a pivot|
+|guess the cylinder can connect the circuit | have a hypothesis|
+|put the cylinder back and turn the fan on | test the hypothesis (debugging)|
+|reason about the plastic box's functionality | symbolic execution & constraint solving|
+|understand it is fall protection mechanism | understand the functionality of code
+repair the fan | reimplement as code or documentation|
 
 Of course, this analogy is not meant to be complete or always accurate. For example, debugging is only one of the ways to test the hypothesis. And we do not explicitly use symbolic execution and constraint solving every time we reverse. An interesting fact is, when we reason about a piece of code, we probably symbolically executed it many times **in our mind** without using any external tools like Triton or angr. 
