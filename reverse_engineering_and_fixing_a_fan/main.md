@@ -76,7 +76,7 @@ The above can be summarized in the following chart:
 
 
 |Repairing a fan | Reverse Enginnering|
-|--- | --- | --- |
+|--- | --- |
 |take the fan apart | static analysis|
 |spot the cylinder | find a pivot|
 |guess the cylinder can connect the circuit | have a hypothesis|
