@@ -1,6 +1,6 @@
 # Solving an Obfuscated Crackme with BinaryNinja and Triton
 
-The last week's [challenge]((https://yurichev.com/blog/58/)) was created by Dennis Yurichev. It is also hosted on [crackmes.one](https://crackmes.one/crackme/5ab77f6233c5d40ad448c9e4). The challenge is compiled by a modified [Tiny C Compiler (TCC)](https://bellard.org/tcc/) which obfuscates the generated code during compilation. We will cover the major techniques to deobfuscate the binary, followed by a quick analysis of the algorithm itself. 
+The last week's [challenge](https://yurichev.com/blog/58/) was created by Dennis Yurichev. It is also hosted on [crackmes.one](https://crackmes.one/crackme/5ab77f6233c5d40ad448c9e4). The challenge is compiled by a modified [Tiny C Compiler (TCC)](https://bellard.org/tcc/) which obfuscates the generated code during compilation. We will cover the major techniques to deobfuscate the binary, followed by a quick analysis of the algorithm itself. 
 
 ## First Impression
 
@@ -434,17 +434,8 @@ def main():
 
     buffer += '\x00' * 16
 
-    # buffer = [
-    # 0x77, 0x77, 0x77, 0x2e, 0x63, 0x72, 0x61, 0x63, 0x6b, 0x6d, 0x65, 0x73, 0x2e, 0x64, 0x65, 0x00,
-    # 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    # 0x78, 0x56, 0x34, 0x12, 0x0f, 0xff, 0x00, 0x00, 0x12, 0x20, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00,
-    # 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-    # ]
-
     crc = crc32(buffer)
-
     buffer += struct.pack('<I', crc)
-
     print(buffer.encode('hex'))
 
     restored_int = transform_back(buffer)
