@@ -1,6 +1,6 @@
 # Solving an Obfuscated Crackme with BinaryNinja and Triton
 
-The last week's [challenge](https://yurichev.com/blog/58/) was created by Dennis Yurichev. It is also hosted on [crackmes.one](https://crackmes.one/crackme/5ab77f6233c5d40ad448c9e4). The challenge is compiled by a modified [Tiny C Compiler (TCC)](https://bellard.org/tcc/) which obfuscates the generated code during compilation. We will cover the major techniques to deobfuscate the binary, followed by a quick analysis of the algorithm itself. 
+The last week's [challenge](https://yurichev.com/blog/58/) was created by [Dennis Yurichev](https://yurichev.com/). It is also hosted on [crackmes.one](https://crackmes.one/crackme/5ab77f6233c5d40ad448c9e4). The challenge is compiled by a modified [Tiny C Compiler (TCC)](https://bellard.org/tcc/) which obfuscates the generated code during compilation. We will cover the major techniques to deobfuscate the binary, followed by a quick analysis of the algorithm itself. 
 
 ## First Impression
 
