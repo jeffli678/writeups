@@ -1,0 +1,174 @@
+<html>
+	<head>
+		<style type="text/css">
+			@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+			body {
+				background-color: rgb(42, 42, 42);
+								color: rgb(220, 220, 220);
+								font-family: "Source Code Pro", "Lucida Console", "Consolas", monospace;
+			}
+						a, a:visited  {
+								color: rgb(200, 200, 200);
+								font-weight: bold;
+						}
+			svg {
+				background-color: rgb(42, 42, 42);
+				display: block;
+				margin: 0 auto;
+			}
+			.basicblock {
+				stroke: rgb(224, 224, 224);
+			}
+			.edge {
+				fill: none;
+				stroke-width: 1px;
+			}
+			.back_edge {
+				fill: none;
+				stroke-width: 2px;
+			}
+			.UnconditionalBranch, .IndirectBranch {
+				stroke: rgb(128, 198, 233);
+				color: rgb(128, 198, 233);
+			}
+			.FalseBranch {
+				stroke: rgb(222, 143, 151);
+				color: rgb(222, 143, 151);
+			}
+			.TrueBranch {
+				stroke: rgb(162, 217, 175);
+				color: rgb(162, 217, 175);
+			}
+			.arrow {
+				stroke-width: 1;
+				fill: currentColor;
+			}
+			text {
+								font-family: "Source Code Pro", "Lucida Console", "Consolas", monospace;
+				font-size: 9pt;
+				fill: rgb(224, 224, 224);
+			}
+			.CodeSymbolToken {
+				fill: rgb(128, 198, 223);
+			}
+			.DataSymbolToken {
+				fill: rgb(142, 230, 237);
+			}
+			.TextToken, .InstructionToken, .BeginMemoryOperandToken, .EndMemoryOperandToken {
+				fill: rgb(224, 224, 224);
+			}
+			.CodeRelativeAddressToken, .PossibleAddressToken, .IntegerToken, .AddressDisplayToken {
+				fill: rgb(162, 217, 175);
+			}
+			.RegisterToken {
+				fill: rgb(237, 223, 179);
+			}
+			.AnnotationToken {
+				fill: rgb(218, 196, 209);
+			}
+			.IndirectImportToken, .ImportToken {
+				fill: rgb(237, 189, 129);
+			}
+			.LocalVariableToken, .StackVariableToken {
+				fill: rgb(193, 220, 199);
+			}
+			.OpcodeToken {
+				fill: rgb(144, 144, 144);
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	</head>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="430.4" height="800">
+		<defs>
+			<marker id="arrow-TrueBranch" class="arrow TrueBranch" viewBox="0 0 10 10" refX="10" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto">
+				<path d="M 0 0 L 10 5 L 0 10 z" />
+			</marker>
+			<marker id="arrow-FalseBranch" class="arrow FalseBranch" viewBox="0 0 10 10" refX="10" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto">
+				<path d="M 0 0 L 10 5 L 0 10 z" />
+			</marker>
+			<marker id="arrow-UnconditionalBranch" class="arrow UnconditionalBranch" viewBox="0 0 10 10" refX="10" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto">
+				<path d="M 0 0 L 10 5 L 0 10 z" />
+			</marker>
+			<marker id="arrow-IndirectBranch" class="arrow IndirectBranch" viewBox="0 0 10 10" refX="10" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto">
+				<path d="M 0 0 L 10 5 L 0 10 z" />
+			</marker>
+		</defs>
+		<g id="functiongraph0" class="functiongraph">
+			<title>Function Graph 0</title>
+			<g id="basicblock0">
+			<title>Basic Block 0</title>
+			<rect class="basicblock" x="14.399999999999999" y="15" fill-opacity="0.4" height="177" width="397.59999999999997" fill="rgb(74,74,74)"/>
+			<text x="14.399999999999999" y="30">
+				<tspan id="instr-0x202" x="20.4" y="31.5"><title>Opcode: 48 8b 35 7c 00 00 00</title><tspan class="CodeSymbolToken">code_buffer_copy</tspan><tspan class="TextToken">:</tspan></tspan>
+				<tspan id="instr-0x202" x="20.4" y="46.5"><title>Opcode: 48 8b 35 7c 00 00 00</title><tspan class="AddressDisplayToken">00002020</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">mov</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">rsi</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="BeginMemoryOperandToken">qword&#160;</tspan><tspan class="TextToken">[</tspan><tspan class="TextToken">rel&#160;</tspan><tspan class="DataSymbolToken">code_size</tspan><tspan class="EndMemoryOperandToken">]</tspan><tspan class="AnnotationToken">&#160;&#160;{</tspan><tspan class="IntegerToken">0xa59</tspan><tspan class="AnnotationToken">}</tspan></tspan>
+				<tspan id="instr-0x202" x="20.4" y="61.5"><title>Opcode: 41 ba 22 00 00 00</title><tspan class="AddressDisplayToken">00002027</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">mov</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">r10d</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="IntegerToken">0x22</tspan></tspan>
+				<tspan id="instr-0x202" x="20.4" y="76.5"><title>Opcode: b8 09 00 00 00</title><tspan class="AddressDisplayToken">0000202d</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">mov</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">eax</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="IntegerToken">0x9</tspan></tspan>
+				<tspan id="instr-0x203" x="20.4" y="91.5"><title>Opcode: ba 07 00 00 00</title><tspan class="AddressDisplayToken">00002032</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">mov</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">edx</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="IntegerToken">0x7</tspan></tspan>
+				<tspan id="instr-0x203" x="20.4" y="106.5"><title>Opcode: 49 c7 c0 ff ff ff ff</title><tspan class="AddressDisplayToken">00002037</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">mov</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">r8</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="PossibleAddressToken">0xffffffffffffffff</tspan></tspan>
+				<tspan id="instr-0x203" x="20.4" y="121.5"><title>Opcode: 48 31 ff</title><tspan class="AddressDisplayToken">0000203e</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">xor</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">rdi</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="RegisterToken">rdi</tspan><tspan class="AnnotationToken">&#160;&#160;{</tspan><tspan class="IntegerToken">0x0</tspan><tspan class="AnnotationToken">}</tspan></tspan>
+				<tspan id="instr-0x204" x="20.4" y="136.5"><title>Opcode: 4d 31 c9</title><tspan class="AddressDisplayToken">00002041</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">xor</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">r9</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="RegisterToken">r9</tspan><tspan class="AnnotationToken">&#160;&#160;{</tspan><tspan class="IntegerToken">0x0</tspan><tspan class="AnnotationToken">}</tspan></tspan>
+				<tspan id="instr-0x204" x="20.4" y="151.5"><title>Opcode: 0f 05</title><tspan class="AddressDisplayToken">00002044</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">syscall</tspan><tspan class="TextToken">&#160;</tspan></tspan>
+				<tspan id="instr-0x204" x="20.4" y="166.5"><title>Opcode: 48 31 c9</title><tspan class="AddressDisplayToken">00002046</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">xor</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">rcx</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="RegisterToken">rcx</tspan><tspan class="AnnotationToken">&#160;&#160;{</tspan><tspan class="IntegerToken">0x0</tspan><tspan class="AnnotationToken">}</tspan></tspan>
+				<tspan id="instr-0x204" x="20.4" y="181.5"><title>Opcode: 48 31 ff</title><tspan class="AddressDisplayToken">00002049</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">xor</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">rdi</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="RegisterToken">rdi</tspan><tspan class="AnnotationToken">&#160;&#160;{</tspan><tspan class="IntegerToken">0x0</tspan><tspan class="AnnotationToken">}</tspan></tspan>
+			</text>
+		</g>
+		<g id="basicblock1">
+			<title>Basic Block 1</title>
+			<rect class="basicblock" x="50.39999999999999" y="225" fill-opacity="0.4" height="192" width="332.79999999999995" fill="rgb(74,74,74)"/>
+			<text x="50.39999999999999" y="255">
+				<tspan id="instr-0x204" x="56.39999999999999" y="241.5"><title>Opcode: 48 8d 15 58 00 00 00</title><tspan class="AddressDisplayToken">0000204c</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">lea</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">rdx</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="TextToken">[</tspan><tspan class="TextToken">rel&#160;</tspan><tspan class="DataSymbolToken">data_20ab</tspan><tspan class="EndMemoryOperandToken">]</tspan></tspan>
+				<tspan id="instr-0x205" x="56.39999999999999" y="256.5"><title>Opcode: 8a 14 0a</title><tspan class="AddressDisplayToken">00002053</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">mov</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">dl</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="BeginMemoryOperandToken">byte&#160;</tspan><tspan class="TextToken">[</tspan><tspan class="RegisterToken">rdx</tspan><tspan class="TextToken">+</tspan><tspan class="RegisterToken">rcx</tspan><tspan class="EndMemoryOperandToken">]</tspan></tspan>
+				<tspan id="instr-0x205" x="56.39999999999999" y="271.5"><title>Opcode: 80 f2 9f</title><tspan class="AddressDisplayToken">00002056</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">xor</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">dl</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="IntegerToken">0x9f</tspan></tspan>
+				<tspan id="instr-0x205" x="56.39999999999999" y="286.5"><title>Opcode: 88 14 08</title><tspan class="AddressDisplayToken">00002059</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">mov</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="BeginMemoryOperandToken">byte&#160;</tspan><tspan class="TextToken">[</tspan><tspan class="RegisterToken">rax</tspan><tspan class="TextToken">+</tspan><tspan class="RegisterToken">rcx</tspan><tspan class="EndMemoryOperandToken">]</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="RegisterToken">dl</tspan></tspan>
+				<tspan id="instr-0x205" x="56.39999999999999" y="301.5"><title>Opcode: 89 fe</title><tspan class="AddressDisplayToken">0000205c</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">mov</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">esi</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="RegisterToken">edi</tspan></tspan>
+				<tspan id="instr-0x205" x="56.39999999999999" y="316.5"><title>Opcode: 48 c1 ee 18</title><tspan class="AddressDisplayToken">0000205e</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">shr</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">rsi</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="PossibleAddressToken">0x18</tspan></tspan>
+				<tspan id="instr-0x206" x="56.39999999999999" y="331.5"><title>Opcode: 48 c1 e7 08</title><tspan class="AddressDisplayToken">00002062</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">shl</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">rdi</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="PossibleAddressToken">0x8</tspan></tspan>
+				<tspan id="instr-0x206" x="56.39999999999999" y="346.5"><title>Opcode: 40 00 d7</title><tspan class="AddressDisplayToken">00002066</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">add</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">dil</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="RegisterToken">dl</tspan></tspan>
+				<tspan id="instr-0x206" x="56.39999999999999" y="361.5"><title>Opcode: 48 31 f7</title><tspan class="AddressDisplayToken">00002069</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">xor</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">rdi</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="RegisterToken">rsi</tspan></tspan>
+				<tspan id="instr-0x206" x="56.39999999999999" y="376.5"><title>Opcode: 48 ff c1</title><tspan class="AddressDisplayToken">0000206c</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">inc</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">rcx</tspan></tspan>
+				<tspan id="instr-0x206" x="56.39999999999999" y="391.5"><title>Opcode: 48 3b 0d 2d 00 00 00</title><tspan class="AddressDisplayToken">0000206f</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">cmp</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">rcx</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="BeginMemoryOperandToken">qword&#160;</tspan><tspan class="TextToken">[</tspan><tspan class="TextToken">rel&#160;</tspan><tspan class="DataSymbolToken">code_size</tspan><tspan class="EndMemoryOperandToken">]</tspan></tspan>
+				<tspan id="instr-0x207" x="56.39999999999999" y="406.5"><title>Opcode: 75 d4</title><tspan class="AddressDisplayToken">00002076</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">jne</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="CodeRelativeAddressToken">0x204c</tspan><tspan class="AnnotationToken">&#160;&#160;{</tspan><tspan class="DataSymbolToken">code_size</tspan><tspan class="AnnotationToken">}</tspan></tspan>
+			</text>
+		</g>
+		<g id="basicblock2">
+			<title>Basic Block 2</title>
+			<rect class="basicblock" x="79.19999999999999" y="450" fill-opacity="0.4" height="72" width="260.79999999999995" fill="rgb(74,74,74)"/>
+			<text x="79.19999999999999" y="495">
+				<tspan id="instr-0x207" x="85.19999999999999" y="466.5"><title>Opcode: 41 8b 34 24</title><tspan class="AddressDisplayToken">00002078</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">mov</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">esi</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="BeginMemoryOperandToken">dword&#160;</tspan><tspan class="TextToken">[</tspan><tspan class="RegisterToken">r12</tspan><tspan class="EndMemoryOperandToken">]</tspan></tspan>
+				<tspan id="instr-0x207" x="85.19999999999999" y="481.5"><title>Opcode: 39 fe</title><tspan class="AddressDisplayToken">0000207c</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">cmp</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">esi</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="RegisterToken">edi</tspan></tspan>
+				<tspan id="instr-0x207" x="85.19999999999999" y="496.5"><title>Opcode: 0f 94 c3</title><tspan class="AddressDisplayToken">0000207e</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">sete</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">bl</tspan></tspan>
+				<tspan id="instr-0x208" x="85.19999999999999" y="511.5"><title>Opcode: 75 0a</title><tspan class="AddressDisplayToken">00002081</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">jne</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="CodeRelativeAddressToken">0x208d</tspan></tspan>
+			</text>
+		</g>
+		<g id="basicblock3">
+			<title>Basic Block 3</title>
+			<rect class="basicblock" x="14.399999999999999" y="675" fill-opacity="0.4" height="102" width="397.59999999999997" fill="rgb(74,74,74)"/>
+			<text x="14.399999999999999" y="735">
+				<tspan id="instr-0x208" x="20.4" y="691.5"><title>Opcode: 48 89 c7</title><tspan class="AddressDisplayToken">0000208d</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">mov</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">rdi</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="RegisterToken">rax</tspan></tspan>
+				<tspan id="instr-0x209" x="20.4" y="706.5"><title>Opcode: 48 8b 35 0c 00 00 00</title><tspan class="AddressDisplayToken">00002090</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">mov</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">rsi</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="BeginMemoryOperandToken">qword&#160;</tspan><tspan class="TextToken">[</tspan><tspan class="TextToken">rel&#160;</tspan><tspan class="DataSymbolToken">code_size</tspan><tspan class="EndMemoryOperandToken">]</tspan><tspan class="AnnotationToken">&#160;&#160;{</tspan><tspan class="IntegerToken">0xa59</tspan><tspan class="AnnotationToken">}</tspan></tspan>
+				<tspan id="instr-0x209" x="20.4" y="721.5"><title>Opcode: b8 0b 00 00 00</title><tspan class="AddressDisplayToken">00002097</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">mov</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">eax</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="IntegerToken">0xb</tspan></tspan>
+				<tspan id="instr-0x209" x="20.4" y="736.5"><title>Opcode: 0f 05</title><tspan class="AddressDisplayToken">0000209c</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">syscall</tspan><tspan class="TextToken">&#160;</tspan></tspan>
+				<tspan id="instr-0x209" x="20.4" y="751.5"><title>Opcode: 48 0f b6 c3</title><tspan class="AddressDisplayToken">0000209e</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">movzx</tspan><tspan class="TextToken">&#160;&#160;&#160;</tspan><tspan class="RegisterToken">rax</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="RegisterToken">bl</tspan></tspan>
+				<tspan id="instr-0x20a" x="20.4" y="766.5"><title>Opcode: c3</title><tspan class="AddressDisplayToken">000020a2</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">retn</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;</tspan><tspan class="AnnotationToken">&#160;{</tspan><tspan class="LocalVariableToken">__return_addr</tspan><tspan class="AnnotationToken">}</tspan></tspan>
+			</text>
+		</g>
+		<g id="basicblock4">
+			<title>Basic Block 4</title>
+			<rect class="basicblock" x="93.6" y="555" fill-opacity="0.4" height="87" width="239.2" fill="rgb(74,74,74)"/>
+			<text x="93.6" y="630">
+				<tspan id="instr-0x208" x="99.6" y="571.5"><title>Opcode: 49 83 c4 04</title><tspan class="AddressDisplayToken">00002083</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">add</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">r12</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="PossibleAddressToken">0x4</tspan></tspan>
+				<tspan id="instr-0x208" x="99.6" y="586.5"><title>Opcode: 50</title><tspan class="AddressDisplayToken">00002087</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">push</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">rax</tspan><tspan class="AnnotationToken">&#160;{</tspan><tspan class="LocalVariableToken">var_8_1</tspan><tspan class="AnnotationToken">}</tspan></tspan>
+				<tspan id="instr-0x208" x="99.6" y="601.5"><title>Opcode: ff d0</title><tspan class="AddressDisplayToken">00002088</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">call</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">rax</tspan></tspan>
+				<tspan id="instr-0x208" x="99.6" y="616.5"><title>Opcode: 88 c3</title><tspan class="AddressDisplayToken">0000208a</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">mov</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">bl</tspan><tspan class="OperandSeparatorToken">,&#160;</tspan><tspan class="RegisterToken">al</tspan></tspan>
+				<tspan id="instr-0x208" x="99.6" y="631.5"><title>Opcode: 58</title><tspan class="AddressDisplayToken">0000208c</tspan><tspan class="TextToken">&#160;&#160;</tspan><tspan class="InstructionToken">pop</tspan><tspan class="TextToken">&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="RegisterToken">rax</tspan><tspan class="AnnotationToken">&#160;{</tspan><tspan class="LocalVariableToken">var_8_1</tspan><tspan class="AnnotationToken">}</tspan></tspan>
+			</text>
+		</g>
+ 		<polyline class="edge UnconditionalBranch" points="197.99999999999997,192.0 197.99999999999997,202.5 197.99999999999997,202.5 197.99999999999997,202.5 201.59999999999997,202.5 201.59999999999997,225.0 " marker-end="url(#arrow-UnconditionalBranch)"/>
+		<polyline class="back_edge TrueBranch" points="201.59999999999997,417.0 201.59999999999997,427.5 201.59999999999997,427.5 28.799999999999997,427.5 28.799999999999997,210.0 28.799999999999997,210.0 208.79999999999998,210.0 208.79999999999998,225.0 " marker-end="url(#arrow-TrueBranch)"/>
+		<polyline class="edge FalseBranch" points="208.79999999999998,417.0 208.79999999999998,435.0 208.79999999999998,435.0 208.79999999999998,435.0 201.59999999999997,435.0 201.59999999999997,450.0 " marker-end="url(#arrow-FalseBranch)"/>
+		<polyline class="edge TrueBranch" points="194.39999999999998,522.0 194.39999999999998,532.5 194.39999999999998,532.5 72.0,532.5 72.0,652.5 72.0,652.5 197.99999999999997,652.5 197.99999999999997,675.0 " marker-end="url(#arrow-TrueBranch)"/>
+		<polyline class="edge FalseBranch" points="201.59999999999997,522.0 201.59999999999997,540.0 201.59999999999997,540.0 201.59999999999997,540.0 205.2,540.0 205.2,555.0 " marker-end="url(#arrow-FalseBranch)"/>
+		<polyline class="edge UnconditionalBranch" points="205.2,642.0 205.2,660.0 205.2,660.0 205.2,660.0 205.2,660.0 205.2,675.0 " marker-end="url(#arrow-UnconditionalBranch)"/>
+
+	</g>
+</svg><p>This CFG generated by <a href="https://binary.ninja/">Binary Ninja</a> from recursion.bndb on Wed 29 Jul 2020 02:35:21 PM CST showing code_buffer_copy as Assembly.</p></html>
